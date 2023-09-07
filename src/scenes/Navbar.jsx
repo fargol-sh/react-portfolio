@@ -10,7 +10,7 @@ const Link = ({page, selectedPage, setSelectedPage}) => {
             className={`${selectedPage === lowerCasePage ? 'text-yellow' : ''}
             hover:text-yellow transition duration-300
             `}
-            href={`#{${lowerCasePage}}`}
+            href={`#${lowerCasePage}`}
             onClick={() => setSelectedPage(lowerCasePage)}
         >
             {page}
@@ -55,7 +55,7 @@ const Navbar = ({isTopOfPage, selectedPage, setSelectedPage}) => {
                         />
 
                         <Link
-                            page="Testimonitals"
+                            page="Testimonials"
                             selectedPage={selectedPage}
                             setSelectedPage={setSelectedPage}
                         />
@@ -106,7 +106,7 @@ const Navbar = ({isTopOfPage, selectedPage, setSelectedPage}) => {
                             />
 
                             <Link
-                                page="Testimonitals"
+                                page="Testimonials"
                                 selectedPage={selectedPage}
                                 setSelectedPage={setSelectedPage}
                             />

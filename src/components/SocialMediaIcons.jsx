@@ -31,7 +31,7 @@ const SocialMediaIcons = () => {
 
             <a
                 className=""
-                href="https://www.instagram.com/fargol-shirvanifar"
+                href="https://www.instagram.com/"
                 target="_blank"
                 rel="noreferrer"
             >

@@ -7,7 +7,7 @@ const DotGroup = ({selectedPage, setSelectedPage}) => {
     `
 
     return (
-        <div className="flex flex-col gap-6 fixed top-[60%] right-7">
+        <div className="flex flex-col gap-6 fixed top-[60%] right-3">
         <AnchorLink
             className={`${selectedPage === 'home' ? selectedStyles : 'bg-dark-grey'}
             w-3 h-3 rounded-full

@@ -662,6 +662,18 @@ video {
   top: 60%;
 }
 
+.right-6{
+  right: 1.5rem;
+}
+
+.right-5{
+  right: 1.25rem;
+}
+
+.right-3{
+  right: 0.75rem;
+}
+
 .z-0{
   z-index: 0;
 }
@@ -696,6 +708,11 @@ video {
   margin-bottom: 2.5rem;
 }
 
+.my-5{
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
 .mb-10{
   margin-bottom: 2.5rem;
 }
@@ -714,6 +731,10 @@ video {
 
 .ml-\[33\%\]{
   margin-left: 33%;
+}
+
+.mt-1{
+  margin-top: 0.25rem;
 }
 
 .mt-10{
@@ -736,6 +757,10 @@ video {
   margin-top: 8rem;
 }
 
+.mt-48{
+  margin-top: 12rem;
+}
+
 .mt-5{
   margin-top: 1.25rem;
 }
@@ -744,8 +769,12 @@ video {
   margin-top: 1.75rem;
 }
 
-.mt-48{
-  margin-top: 12rem;
+.mb-20{
+  margin-bottom: 5rem;
+}
+
+.mb-40{
+  margin-bottom: 10rem;
 }
 
 .flex{
@@ -772,12 +801,16 @@ video {
   height: 8rem;
 }
 
-.h-full{
-  height: 100%;
+.h-64{
+  height: 16rem;
 }
 
 .h-\[350px\]{
   height: 350px;
+}
+
+.h-full{
+  height: 100%;
 }
 
 .max-h-\[400px\]{
@@ -796,6 +829,10 @@ video {
   width: 66.666667%;
 }
 
+.w-2\/4{
+  width: 50%;
+}
+
 .w-3{
   width: 0.75rem;
 }
@@ -812,12 +849,12 @@ video {
   width: 100%;
 }
 
-.w-2\/4{
-  width: 50%;
-}
-
 .max-w-\[400px\]{
   max-width: 400px;
+}
+
+.basis-1\/2{
+  flex-basis: 50%;
 }
 
 .basis-2\/5{
@@ -935,6 +972,14 @@ video {
   padding: 0.5rem;
 }
 
+.p-3{
+  padding: 0.75rem;
+}
+
+.p-5{
+  padding: 1.25rem;
+}
+
 .px-10{
   padding-left: 2.5rem;
   padding-right: 2.5rem;
@@ -965,9 +1010,18 @@ video {
   padding-bottom: 0.75rem;
 }
 
+.py-48{
+  padding-top: 12rem;
+  padding-bottom: 12rem;
+}
+
 .py-6{
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+}
+
+.pb-16{
+  padding-bottom: 4rem;
 }
 
 .pb-24{
@@ -990,20 +1044,12 @@ video {
   padding-top: 2.5rem;
 }
 
-.pt-48{
-  padding-top: 12rem;
-}
-
-.pt-16{
-  padding-top: 4rem;
-}
-
-.pb-16{
-  padding-bottom: 4rem;
-}
-
 .pt-32{
   padding-top: 8rem;
+}
+
+.pt-48{
+  padding-top: 12rem;
 }
 
 .text-center{
@@ -1076,6 +1122,14 @@ video {
   color: rgb(253 204 73 / var(--tw-text-opacity));
 }
 
+.placeholder-opaque-black::-webkit-input-placeholder{
+  color: rgba(0,0,0,0.35);
+}
+
+.placeholder-opaque-black::placeholder{
+  color: rgba(0,0,0,0.35);
+}
+
 .opacity-0{
   opacity: 0;
 }
@@ -1141,24 +1195,24 @@ body,
   top: -70px;
 }
 
-.before\:left-\[-50\%\]::before{
-  content: var(--tw-content);
-  left: -50%;
-}
-
-.before\:top-\[-50\%\]::before{
-  content: var(--tw-content);
-  top: -50%;
-}
-
 .before\:left-1\/2::before{
   content: var(--tw-content);
   left: 50%;
 }
 
+.before\:left-\[-50\%\]::before{
+  content: var(--tw-content);
+  left: -50%;
+}
+
 .before\:top-\[-120px\]::before{
   content: var(--tw-content);
   top: -120px;
+}
+
+.before\:top-\[-50\%\]::before{
+  content: var(--tw-content);
+  top: -50%;
 }
 
 .before\:z-\[-1\]::before{
@@ -1225,23 +1279,28 @@ body,
 }
 
 .before\:content-person1::before{
-  --tw-content: url('./assets/person-1.png');
+  --tw-content: url('../public/assets/person-1.png');
   content: var(--tw-content);
 }
 
 .before\:content-person2::before{
-  --tw-content: url('./assets/person-2.png');
+  --tw-content: url('../public/assets/person-2.png');
   content: var(--tw-content);
 }
 
 .before\:content-person3::before{
-  --tw-content: url('./assets/person-3.png');
+  --tw-content: url('../public/assets/person-3.png');
   content: var(--tw-content);
 }
 
 .hover\:bg-blue:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(44 188 233 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-red:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(220 68 146 / var(--tw-bg-opacity));
 }
 
 .hover\:text-red:hover{
@@ -1289,7 +1348,7 @@ body,
   }
 
   .xs\:before\:content-brush::before{
-    --tw-content: url('./assets/brush.png');
+    --tw-content: url('../public/assets/brush.png');
     content: var(--tw-content);
   }
 }
@@ -1315,6 +1374,30 @@ body,
 
   .md\:mt-32{
     margin-top: 8rem;
+  }
+
+  .md\:mb-40{
+    margin-bottom: 10rem;
+  }
+
+  .md\:mb-20{
+    margin-bottom: 5rem;
+  }
+
+  .md\:mb-\[200px\]{
+    margin-bottom: 200px;
+  }
+
+  .md\:mb-\[220px\]{
+    margin-bottom: 220px;
+  }
+
+  .md\:mb-\[15rem\]{
+    margin-bottom: 15rem;
+  }
+
+  .md\:mb-\[20rem\]{
+    margin-bottom: 20rem;
   }
 
   .md\:flex{
@@ -1347,6 +1430,10 @@ body,
 
   .md\:justify-start{
     justify-content: flex-start;
+  }
+
+  .md\:justify-end{
+    justify-content: flex-end;
   }
 
   .md\:justify-between{
